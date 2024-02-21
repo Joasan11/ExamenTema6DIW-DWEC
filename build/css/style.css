@@ -1,0 +1,51 @@
+body{
+    background-color: gray;
+}
+
+.header{
+    display: flex;
+    background-color: #c127c1;
+    justify-content: space-between;
+}
+
+.header img{
+    max-width: 50px;
+}
+
+.navegacion-principal{
+
+}
+
+.video video{
+
+}
+
+.overlay{
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.contenedor h2{
+
+}
+
+.contenedor p{
+
+}
+
+.contenedor{
+
+}
+
+.galeria{
+
+}
+
+.galeria-imagenes{
+
+}
+
+.site-footer{
+
+}
