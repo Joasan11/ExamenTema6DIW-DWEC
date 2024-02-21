@@ -81,8 +81,29 @@ body {
     margin: 2rem;
 }
 
+.galeria h3{
+    text-align: center;
+    color: #000000;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+}
+
+.galeria-imagenes{
+    
+}
+
+.site-footer{
+    background-color: #703cc3;
+    text-align: center;
+    padding: 30px;
+}
+
 @media (min-width: 900px) {
     .video video{
         width: 100%;
     }
 }
+
