@@ -1,51 +1,82 @@
-body{
-    background-color: gray;
+html {
+    overflow-x: hidden;
 }
 
-.header{
+body {
+    margin: 0;
+}
+
+.header {
+    background-color: #7108aaca;
     display: flex;
-    background-color: #c127c1;
     justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
 }
 
-.header img{
+.header img {
     max-width: 50px;
 }
 
-.navegacion-principal{
+.contenido-header {
+    display: flex;
+    align-items: center;
+}
 
+.navegacion-principal {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.navegacion-principal a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+
+.video{
+    position: relative;
+    max-height: 70rem;
+    min-height: 50rem;
+}
+
+.video .overlay {
+    position: absolute;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.778) 0%, rgba(80, 19, 233, 0.3) 100%);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
 }
 
 .video video{
-
+    display: block;
+    width: auto;
 }
 
-.overlay{
-    top: 0;
-    left: 0;
-    right: 0;
+.contenido-video{
+    z-index: 10;
 }
 
 .contenedor h2{
-
+    color: #FFFFFF;
+    font-family: Protest Revolution;
+    font-size: 7rem;
+    margin: 0;
 }
 
 .contenedor p{
-
-}
-
-.contenedor{
-
-}
-
-.galeria{
-
-}
-
-.galeria-imagenes{
-
-}
-
-.site-footer{
-
+    background-color: #703cc3;
+    color: #FFFFFF;
+    font-family: "MiLetra";
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin: 2rem;
 }
