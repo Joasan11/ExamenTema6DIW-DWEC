@@ -4,47 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jujutsu Kaisen</title>
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+    <link rel="stylesheet" href="build/css/normalize.css">
+    <link rel="icon" href="build/img/Satoru-gojo.png">
     
-    <!-- Este sera el header -->
-    <header>
-        <div>
+</head>
+<body id="inicio">
+
+    <header class="header">
+        <div class="contenedor contenido-header">
             <span>
-                <img src="" alt="">
+                <img src="build/img/Satoru-gojo.png" alt="Gojo Chiquito">
             </span>
-            <nav>
+            <nav class="navegacion-principal">
                 <a href="#inicio">Inicio</a>
                 <a href="#galeria">Galeria</a>
             </nav>
         </div>
     </header>
 
-    <!-- Aqui sera la parte del video con su respectivo titulo etc -->
-    <div>
-        <div>
-            <div>
+    <div class="video">
+        <div class="overlay">
+            <div class="contenedor contenedor-video">
                 <h2>Jujutsu Kaisen</h2>
-                <p>Subtitulo</p>
+                <p>El hechizero mas fuerte de la historia /VS\ El hechizero mas fuerte de hoy en dia</p>
             </div>
         </div>
-        <video>
-            <source src="">
-            <source src="">
-            <source src="">            
+        <video autoplay loop muted>
+            <source src="video/Pelea.mp4" type="video/mp4">
+            <source src="video/Pelea.ogg" type="video/ogg">
+            <source src="video/Pelea.webm" type="video/webm">
         </video>
     </div>
 
-    <!-- Aqui ira la parte de la galeria, donde se mostraran las imagenes-->
-    <section>
+    <section id="galeria" class="galeria contenedor">
         <h3>Galeria</h3>
-        <ul></ul>
+        <ul class="galeria-imagenes"></ul>
     </section>
 
-    <!-- Aqui ira el respectivo footer, donde añadiremos el año actual, a traves de un span -->
-    <footer>
-        <p>Este es mi footer</p>
+    <footer class="site-footer">
+        <p>@ Joaquín Sánchez Miravalles (Studient) <span id="year"></span></p>
     </footer>
 
+    <script src="build/js/app.js"></script>
 </body>
 </html>
