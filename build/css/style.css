@@ -80,3 +80,9 @@ body {
     font-size: 1.25rem;
     margin: 2rem;
 }
+
+@media (min-width: 900px) {
+    .video video{
+        width: 100%;
+    }
+}
