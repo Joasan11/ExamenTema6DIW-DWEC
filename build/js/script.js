@@ -45,13 +45,24 @@ function mostrarImagen(){
 
 }
 
-function imagenExiste(){
-
+function imagenExiste(src) {
+    const http = new XMLHttpRequest();
+    http.open('HEAD', src, false);
+    http.send();
+    return http.status !== 404;
 }
 
-function scrollNow(){
+function scrollNow() {
+    const enlaces = document.querySelectorAll(".navegacion-principal a");
 
+    enlaces.forEach(enlace => {
+        enlace.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const scroll = e.target.attributes.href.value;
+            const seccion = document.querySelector(scroll);
+
+            seccion.scrollIntoView({ behavior: "smooth" });
+        });
+    });
 }
-
-
-
